@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+    <style>
+          
+        #black{
+            color:black;
+        }
+
+        .title-box{
+            border-width:7px;
+            border-color:palevioletred;
+            border-style: solid;
+            /*
+            여기까지만 하면 화면 다 쓰는 블럭 레벨 엘리먼트
+            */
+
+            display:inline;
+            /*이렇게하면 딱 해당하는 공간만 쓰는 인라인 엘리먼트가 됨*/
+
+            padding:5px;
+            margin:0px;
+            font-size:50px;
+            text-align:center;
+
+        }
+
+        .center{
+            text-align:center;
+        }
+
+        .saw{
+            color:palevioletred;
+        }
+
+        .active{
+            color:pink;
+        }
+
+        h2{
+            color:purple;
+            text-decoration: underline;
+        }
+
+        #border-right{
+            border-right:1px solid gray;
+            width:100px;
+            margin:0px;
+            padding:20px;
+
+        }
+        
+        @media(max-width :800px){
+            #border-right{
+                display:none;
+            }
+        }
+
+
+        body{
+            margin:30px;
+        }
+
+        .span-pink{
+            color:palevioletred;
+        }
+
+        #grid{
+            grid-template-columns: auto 1fr;
+        }
+
+    </style>
+
+    <head>
+
+        <title>
+            BLACK PINK in YOUR AREA
+        </title>
+
+    </head>
+    
+    <body>
+
+        <h1 class="title-box center">
+            BLACK 
+            <span 
+            class="span-pink">
+            PINK
+            </span>
+        </h1>
+
+        <div id="grid">
+        <ul id="border-right">
+           <span>
+               MEMBERS <BR></span>
+            <li 
+            id="black" 
+            class="saw active">
+                <a 
+                href="https://www.instagram.com/sooyaaa__/">
+                JISOO
+                </a>
+            </li>
+
+            <li 
+            id="black" 
+            class="saw active">
+                <a 
+                href="https://www.instagram.com/jennierubyjane/">
+                JENNIE
+                </a>
+            </li>
+
+            <li 
+            id="black" 
+            class="saw active">
+                <a href="https://www.instagram.com/roses_are_rosie/">
+                ROSE
+                </a>
+            </li>
+
+            <li 
+            id="black" 
+            class="saw active">
+                <a 
+                href="https://www.instagram.com/lalalalisa_m/">
+                LISA
+                </a>
+            </li>
+        </ul>
+
+        
+        </div>
+
+    </body>
+    
+</html>
